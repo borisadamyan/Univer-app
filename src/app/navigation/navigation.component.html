@@ -1,0 +1,30 @@
+<div class="btn-group pull-right" role="" aria-label="Basic example">
+  <button class="btn btn-success" id="users" (click)="showModal1()">Users</button>
+  <button class="btn btn-success" id="group" (click)="showModal2()">Group</button>
+  <button class="btn btn-success" id="course" (click)="showModal3()">Course</button>
+  <button class="btn btn-success" id="faculty" (click)="showModal4()">Faculty</button>
+</div>
+<div id="myModal_users" *ngIf="isOpen_users">
+  <div class="modal-content">
+    <span class="close" (click)="closeModal()">&times;</span>
+    <p>modal Window USER</p>
+  </div>
+</div>
+<div id="myModal_group" *ngIf="isOpen_group">
+  <div class="modal-content">
+    <span class="close" (click)="closeModal()">&times;</span>
+    <p>modal Window GROUP</p>
+  </div>
+</div>
+<div id="myModal_course" *ngIf="isOpen_course">
+  <div class="modal-content">
+    <span class="close" (click)="closeModal()">&times;</span>
+    <p>modal Window COURSE</p>
+  </div>
+</div>
+<div id="myModal_faculty" *ngIf="isOpen_faculty">
+  <div class="modal-content">
+    <span class="close" (click)="closeModal()">&times;</span>
+    <p>modal Window FACULTY</p>
+  </div>
+</div>

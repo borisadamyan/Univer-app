@@ -1,0 +1,17 @@
+.search_user {
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid lightseagreen;
+  margin-bottom: 5px;
+  padding: 5px 15px; }
+  .search_user:focus {
+    outline: none; }
+
+select {
+  width: 100%;
+  margin-bottom: 5px; }
+
+.table-striped tbody tr:nth-of-type(odd) {
+  background-color: rgba(32, 178, 170, 0.4); }
+
+/*# sourceMappingURL=user.component.css.map */

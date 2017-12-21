@@ -1,0 +1,70 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <table class="table table-striped">
+        <thead>
+        <tr>
+          <th></th>
+          <th>
+            <input
+              class="search_user"
+              type="text"
+              placeholder="Search by Name"
+              [(ngModel)]="searchStr"
+          >
+          </th>
+          <th><select [(ngModel)]="selected">
+            <option *ngFor="let faculty of facultys"
+                    [value]="faculty">
+              {{ faculty}}
+            </option>
+          </select></th>
+          <th><select [(ngModel)]="selectedGroup">
+            <option *ngFor="let group of groups"
+                    [value]="group">
+              {{ group }}
+            </option>
+          </select></th>
+          <th><select [(ngModel)]="selectedCourse">
+            <option *ngFor="let course of courses"
+                    [value]="course">
+              {{ course }}
+            </option>
+          </select></th>
+          <th>
+            <input
+              class="search_user"
+              type="text"
+              placeholder="Search by Phone"
+              [(ngModel)]="searchPhone"
+            >
+          </th>
+        </tr>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col"
+              *ngFor="let tableHead of tableHeadNames">
+            {{tableHead}}
+          </th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr
+          *ngFor="let tableBody of users
+        | search:searchStr
+        | searchPhone:searchPhone
+        | filter_faculty:selected
+        | filter_group:selectedGroup
+        | filter_course:selectedCourse">
+          <th scope="row">{{tableBody.id}}</th>
+          <td>{{tableBody.name}}</td>
+          <td>{{tableBody.faculty }}</td>
+          <td>{{tableBody.group}}</td>
+          <td>{{tableBody.course}}</td>
+          <td>{{tableBody.phone}}</td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
