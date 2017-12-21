@@ -12,7 +12,8 @@ select {
   margin-bottom: 5px; }
 
 .table-striped {
-  border: 1px solid lightseagreen; }
+  border: 1px solid lightseagreen;
+  color: #191919; }
   .table-striped thead {
     background-color: white; }
     .table-striped thead tr th {

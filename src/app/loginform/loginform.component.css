@@ -8,4 +8,12 @@ input {
   letter-spacing: 1px;
   border: none; }
 
+.btn-group {
+  width: 100%; }
+  .btn-group button {
+    width: 70%; }
+  .btn-group button.back {
+    width: 30%;
+    background-color: red; }
+
 /*# sourceMappingURL=loginform.component.css.map */

@@ -1,5 +1,6 @@
 <div class="container">
   <div class="row">
+    <h1 class="text-center">Oxford University</h1>
     <div class="col-md-4 col-sm-6 col-md-offset-4 col-sm-offset-3">
       <form class="form-signin" (submit)="loginUser($event)">
         <h2 class="form-signin-heading">Please sign in</h2>
@@ -29,7 +30,10 @@
         <div class="alert alert-warning" *ngIf="incorrect">
           Write a correct Username or Password
         </div>
-        <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+        <div class="btn-group">
+          <button class="btn btn-primary" type="submit">Sign in</button>
+          <button class="btn btn-primary back" routerLink="/">Go Back</button>
+        </div>
       </form>
     </div>
   </div>

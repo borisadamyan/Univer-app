@@ -8,3 +8,13 @@ input{
   letter-spacing: 1px;
   border: none;
 }
+.btn-group{
+  width: 100%;
+  button{
+    width: 70%;
+  }
+  button.back{
+    width: 30%;
+    background-color: red;
+  }
+}
