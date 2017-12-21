@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,KAAK;EACH,aAAa,EAAE,IAAI",
+"sources": ["loginform.component.scss"],
+"names": [],
+"file": "loginform.component.css"
+}
