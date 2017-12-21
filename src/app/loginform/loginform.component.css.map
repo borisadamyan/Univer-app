@@ -1,6 +1,6 @@
 {
 "version": 3,
-"mappings": "AAAA,KAAK;EACH,aAAa,EAAE,IAAI",
+"mappings": "AAAA,KAAK;EACH,aAAa,EAAE,IAAI;;AAErB,IAAI;EACF,gBAAgB,EAAE,aAAa;EAC/B,KAAK,EAAE,IAAI;EACX,WAAW,EAAE,IAAI;EACjB,cAAc,EAAE,GAAG;EACnB,MAAM,EAAE,IAAI",
 "sources": ["loginform.component.scss"],
 "names": [],
 "file": "loginform.component.css"

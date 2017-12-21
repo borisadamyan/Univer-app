@@ -7,7 +7,9 @@ import {Router} from '@angular/router';
   styleUrls: ['./loginform.component.scss']
 })
 export class LoginformComponent implements OnInit {
-
+  incorrect = false;
+  userNameInput = '';
+  passwordInput = '';
   constructor(private router: Router) { }
 
   ngOnInit() {
@@ -18,7 +20,11 @@ export class LoginformComponent implements OnInit {
     const password = e.target.elements[1].value;
     if(userName == 'admin' &&  password == 'admin'){
       this.router.navigate(['main']);
+
+    }else{
+      this.incorrect = true;
+      this.userNameInput = null;
+      this.passwordInput = null;
     }
   }
-
 }

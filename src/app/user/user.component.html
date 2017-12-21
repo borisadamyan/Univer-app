@@ -4,13 +4,19 @@
       <table class="table table-striped">
         <thead>
         <tr>
-          <th></th>
+          <th><div class="btn-group pull-left">
+            <button
+              class="btn btn-success"
+              id="reset"
+              (click)="resetFilter()">&#8634;</button>
+          </div></th>
           <th>
             <input
               class="search_user"
               type="text"
               placeholder="Search by Name"
               [(ngModel)]="searchStr"
+              [value] = "searchSrtInput"
           >
           </th>
           <th><select [(ngModel)]="selected">
@@ -37,6 +43,7 @@
               type="text"
               placeholder="Search by Phone"
               [(ngModel)]="searchPhone"
+              [value] = "searchPhoneInput"
             >
           </th>
         </tr>

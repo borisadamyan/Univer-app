@@ -13,9 +13,11 @@ import { MainComponent } from './main/main.component';
 import {RouterModule} from '@angular/router';
 import { TopNavComponent } from './top-nav/top-nav.component';
 import { LoginformComponent } from './loginform/loginform.component';
+import { WelcomeComponent } from './welcome/welcome.component';
 
 const routes = [
-  { path: '', component: LoginformComponent },
+  { path: '', component: WelcomeComponent },
+  {path: 'login', component: LoginformComponent},
   { path: 'main', component: MainComponent }
 ]
 
@@ -32,7 +34,8 @@ const routes = [
     FilterCourse,
     MainComponent,
     TopNavComponent,
-    LoginformComponent
+    LoginformComponent,
+    WelcomeComponent
   ],
   imports: [
     BrowserModule,

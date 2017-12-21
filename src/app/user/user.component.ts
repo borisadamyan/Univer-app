@@ -1,7 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {UsersService} from '../users.service';
 
-
 @Component({
   selector: 'app-user',
   templateUrl: './user.component.html',
@@ -20,6 +19,8 @@ export class UserComponent implements OnInit {
   selectedGroup;
   selectedData;
   selectedCourse;
+  searchPhoneInput;
+  searchSrtInput;
   constructor( private userServ: UsersService) {
     this.users = this.userServ.users;
     this.tableHeadNames = this.userServ.tableHeadNames;
@@ -29,5 +30,12 @@ export class UserComponent implements OnInit {
     this.selectedData = this.users;
   }
   ngOnInit() {
+  }
+  resetFilter(){
+    this.searchSrtInput = '';
+    this.selected = '';
+    this.selectedGroup = '';
+    this.selectedCourse = '';
+    this.searchPhoneInput = '';
   }
 }

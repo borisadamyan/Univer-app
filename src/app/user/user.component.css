@@ -11,7 +11,22 @@ select {
   width: 100%;
   margin-bottom: 5px; }
 
-.table-striped tbody tr:nth-of-type(odd) {
-  background-color: rgba(32, 178, 170, 0.4); }
+.table-striped {
+  border: 1px solid lightseagreen; }
+  .table-striped thead {
+    background-color: white; }
+    .table-striped thead tr th {
+      border-bottom: 2px solid gray; }
+  .table-striped tbody tr:nth-of-type(odd) {
+    background-color: rgba(32, 178, 170, 0.8); }
+  .table-striped tbody tr:nth-of-type(even) {
+    background-color: white; }
+  .table-striped tbody tr th {
+    border-bottom: 2px solid lightseagreen; }
+  .table-striped tbody tr td {
+    border-bottom: 2px solid lightseagreen; }
+  .table-striped button {
+    background-color: lightseagreen;
+    font-size: 18px; }
 
 /*# sourceMappingURL=user.component.css.map */

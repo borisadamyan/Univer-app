@@ -3,14 +3,14 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-navigation',
   templateUrl: './navigation.component.html',
-  styleUrls: ['./navigation.component.scss']
+  styleUrls: ['./navigation.component.scss'],
 })
 export class NavigationComponent implements OnInit {
   isOpen_users = false;
   isOpen_group = false;
   isOpen_course = false;
   isOpen_faculty = false;
-  constructor() { }
+  constructor() {}
 
   ngOnInit() {
   }
@@ -33,5 +33,4 @@ export class NavigationComponent implements OnInit {
     this.isOpen_course = false;
     this.isOpen_faculty = false;
   }
-
 }
