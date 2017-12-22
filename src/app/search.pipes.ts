@@ -5,6 +5,9 @@ import {Pipe, PipeTransform} from '@angular/core';
 })
 export  class SearchPipes implements PipeTransform {
   transform( users, value) {
+    if(value === ''){
+      return users;
+    }
     return users.filter( user => {
       return user.name.includes(value);
     });

@@ -1,0 +1,74 @@
+<app-top-nav></app-top-nav>
+<h2 class="text-center">Create a new user</h2>
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <button routerLink="../../main" class="btn btn-success pull-right">Go back</button>
+        <table class="table">
+          <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Full Name</th>
+            <th scope="col">Faculty</th>
+            <th scope="col">Group</th>
+            <th scope="col">Course</th>
+            <th scope="col">Phone Number</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>
+              <input
+                type="text"
+                [(ngModel)]="fullName"
+              ></td>
+            <td>
+              <select [(ngModel)]="facultyName">
+                <option *ngFor="let faculty of facultys"
+                        [value]="faculty">
+                  {{ faculty }}
+                </option>
+              </select>
+            </td>
+            <td>
+              <select [(ngModel)]="groupName">
+                <option *ngFor="let group of groups"
+                        [value]="group">
+                  {{ group }}
+                </option>
+              </select>
+            </td>
+            <td>
+              <select name="" id="" [(ngModel)]="courseName">
+                <option *ngFor="let course of courses"
+                        [value]="course">
+                  {{ course }}
+                </option>
+              </select>
+            </td>
+            <td><input
+              type="text"
+              [(ngModel)]="phoneNumber"
+              pattern="correct"
+            ></td>
+            <td><button (click)="addNewUser()">Add User</button></td>
+          </tr>
+          </tbody>
+        </table>
+      <div class="row">
+        <div class="col-md-4 col-md-offset-4 alert alert-danger text-center"
+            *ngIf="fill"
+         >
+            Fill the Blanks
+        </div>
+        <div class="col-md-4 col-md-offset-4 alert alert-success text-center"
+             *ngIf="added"
+        >
+          New user Added to DataBase
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+

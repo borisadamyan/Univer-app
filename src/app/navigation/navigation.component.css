@@ -30,5 +30,7 @@
   margin: 30px 0; }
   .btn-group button {
     background-color: lightseagreen; }
+  .btn-group .add {
+    background-color: chocolate; }
 
 /*# sourceMappingURL=navigation.component.css.map */

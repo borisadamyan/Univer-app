@@ -5,7 +5,6 @@ import {UsersService} from '../users.service';
   selector: 'app-user',
   templateUrl: './user.component.html',
   styleUrls: ['./user.component.scss'],
-  providers: [UsersService]
 })
 export class UserComponent implements OnInit {
   tableHeadNames = [];
@@ -30,6 +29,7 @@ export class UserComponent implements OnInit {
     this.selectedData = this.users;
   }
   ngOnInit() {
+    this.users = this.userServ.users.map(x => Object.assign({}, x));
   }
   resetFilter(){
     this.searchSrtInput = '';

@@ -1,3 +1,6 @@
+import {Injectable} from '@angular/core';
+
+@Injectable()
 export class UsersService{
   tableHeadNames = [
     'Full Name',
@@ -17,7 +20,7 @@ export class UsersService{
     },
     {
       id: 2,
-      name: 'Hary Benton',
+      name: 'Hary Bengon',
       faculty: 'Bathematics',
       group: 'A',
       course: '3',
@@ -49,7 +52,7 @@ export class UsersService{
     },
     {
       id: 6,
-      name: 'Stiqen Vioth',
+      name: 'Stiqfn Vioth',
       faculty: 'Cibernetic',
       group: 'A',
       course: '3',

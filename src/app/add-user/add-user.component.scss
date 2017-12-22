@@ -1,0 +1,25 @@
+h2{
+  margin: 50px 0 100px;
+}
+.table-striped>tbody>tr:nth-of-type(odd){
+  background-color: lightseagreen;
+}
+
+input{
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid lightseagreen;
+  background-color: transparent;
+  &:focus{
+    outline: none;
+  }
+}
+.number{
+  width: 20%;
+}
+.alert-success{
+  border: 2px solid lightseagreen;
+}
+.btn{
+  background-color: lightseagreen;
+}
